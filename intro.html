@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Serpent Strike</title>
+    <style>
+        /* Video Background */
+        #backgroundVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Body Styling */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Welcome Box */
+        #introBox {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Game Title */
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #4CAF50;
+        }
+
+        /* Start Button */
+        #startButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        #startButton:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="./into video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Welcome Box -->
+    <div id="introBox">
+        <h1>Welcome to Serpent Strike!</h1>
+        <p>A slithering adventure awaits you! Can you survive the challenge?</p>
+        <a href="./index.html" style="text-decoration: none;">
+            <button id="startButton">Play Now</button>
+        </a>
+        <h2>Made By H1,H7 & H4 </h2>
+    </div>
+
+    <!-- Footer Section -->
+<footer style="
+position: absolute; 
+bottom: 10px; 
+width: 100%; 
+text-align: center; 
+color: #fff; 
+font-size: 14px; 
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);">
+© 2024 Serpent Strike. All rights reserved.
+</footer>
+
+</body>
+</html>

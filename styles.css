@@ -1,0 +1,38 @@
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire screen */
+    z-index: -1; /* Places the video behind all other elements */
+}
+/* General Body Styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Snake Game Heading */
+h1 {
+    position: absolute;
+    top: 10px;
+    font-size: 26px;
+    text-align: center;
+    z-index: 1; /* Places the title above the video */
+}
+
+/* Game Canvas */
+#gameCanvas {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    border: 6px solid #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Places the canvas above the video */
+}
